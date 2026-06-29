@@ -41,12 +41,24 @@
                 background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
             }
         }
+
+        aside .container .nav .nav-link.actvie {
+            border-bottom: 3px solid #038af8;
+        }
+
+        .t50px {
+            top: 50px;
+        }
+
+        main {
+            min-height: 200vh;
+        }
     </style>
     <title>Flickr 版型</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -97,7 +109,24 @@
             <div class="fs-2 fw-bold text-light z-1">Ben Chen</div>
         </div>
     </header>
-    <aside></aside>
+    <aside class="border-bottom sticky-top bg-white t50px">
+        <div class="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link actvie" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
     <main></main>
     <footer></footer>
 
