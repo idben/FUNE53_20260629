@@ -26,6 +26,10 @@
             height: 700px;
         }
 
+        .wh30px {
+            width: 30px;
+            height: 30px;
+        }
 
         main {
             min-height: 200vh;
@@ -90,8 +94,11 @@
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" aria-current="true"
                     aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="active"
-                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                    class="position-relative active" aria-label="Slide 2">
+                    <img class="wh30px position-absolute start-0 top-0"
+                        src="https://images.pexels.com/photos/26654655/pexels-photo-26654655.jpeg" alt="">
+                </button>
                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
