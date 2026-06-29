@@ -113,6 +113,10 @@
             width: 50px;
         }
 
+        .w300px {
+            width: 300px;
+        }
+
         .h200px {
             height: 200px;
         }
@@ -122,8 +126,25 @@
 
 <body>
     <nav class="h50px bg-fb1 d-flex align-items-center">
-        <div class="container">
+        <div class="container d-flex">
             <i class="fa-brands fa-square-facebook text-white fs-2"></i>
+            <div class="input-group w300px input-group-sm">
+                <span class="input-group-text">搜尋</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+            </div>
+            <div class="h30px w30px bg-fb3 rounded-circle overflow-hidden ms-auto  me-5">
+                <img class="w-100 h-100" src="https://randomuser.me/api/portraits/men/42.jpg" alt="">
+            </div>
+            <div class="text-light mx-5">首頁</div>
+            <div class="text-light me-5">建立</div>
+            <i class="fa-solid fa-user-group fs-3 me-3"></i>
+            <i class="fa-solid fa-comment fs-3 me-3"></i>
+            <i class="fa-solid fa-bell fs-3 me-3"></i>
+            <i class="fa-solid fa-circle-question fs-3 me-3"></i>
+            <i class="fa-sharp fa-solid fa-sort-down"></i>
         </div>
     </nav>
     <main>
